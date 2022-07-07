@@ -1,6 +1,6 @@
 package Tutorial_01
 
-object Question_01_Second_Part extends App {
+object Question_03_Second_Part extends App {
   // Initialize variables
   var a = 2
   var b = 3
