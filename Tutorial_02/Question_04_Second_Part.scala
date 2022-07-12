@@ -1,4 +1,4 @@
-package Tutorial_01
+package Tutorial_02
 
 object Question_04_Second_Part extends App {
   def getProfit(ticketPrice: Int): Int = {

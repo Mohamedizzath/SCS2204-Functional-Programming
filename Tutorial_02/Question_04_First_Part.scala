@@ -1,4 +1,4 @@
-package Tutorial_01
+package Tutorial_02
 
 import scala.io.StdIn.readInt
 

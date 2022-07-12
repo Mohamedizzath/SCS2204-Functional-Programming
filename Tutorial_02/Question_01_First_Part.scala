@@ -1,4 +1,4 @@
-package Tutorial_01
+package Tutorial_02
 
 object Question_01_First_Part extends App {
   // Step 1. Declaring all the variables ( Answer for the question 1 and question 2)
