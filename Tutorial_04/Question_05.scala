@@ -40,7 +40,7 @@ object Question_05 extends App {
   // Test data
   val names = Array("Benny", "Niroshan", "Saman", "Kumara")
   println(applyFormats(toUpperCase, names(0)))
-  println(applyFormats(toUpperCase, names(1)))
+  println(s"${applyFormats(toUpperCase, names(1).substring(0,2))}${names(1).substring(2)}")
   println(applyFormats(toLowerCase, names(2)))
-  println(applyFormats(toLowerCase, names(3)))
+  println(s"${names(3).substring(0, 5)}${applyFormats(toUpperCase, names(3).substring(5))}");
 }

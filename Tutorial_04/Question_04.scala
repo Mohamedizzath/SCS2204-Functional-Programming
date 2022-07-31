@@ -2,7 +2,11 @@ package Tutorial_04
 
 object Question_04{
   // Check whether it is even or odd
-  def isEven(number: Int): Boolean = if(number == 0) true else if(!isEven(number - 1)) true else false
+  def isEven(number: Int): Boolean = number match{
+    case x if(x == 0) => true
+    case x if(x > 0) => !isEven(number - 1)
+    case x if(x < 0) => !isEven(number + 1)
+  }
 
   def main(args: Array[String]): Unit = {
     // Getting number as the input from the command line
