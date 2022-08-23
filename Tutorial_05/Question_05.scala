@@ -15,6 +15,13 @@ object Question_05 extends App {
     if(isEven(number)) println(number)
   }
 
+  // Getting the addition
+  def getAdditionSum(number: Int): Int =
+  if(number > 1 && isEven(number)) getAdditionSum(number - 1) + number
+  else if(number > 1 && !isEven(number)) getAdditionSum(number - 1)
+  else return 0
+
   // Driver part of the program
   printSequence(31)
+  println(getAdditionSum(15))
 }
