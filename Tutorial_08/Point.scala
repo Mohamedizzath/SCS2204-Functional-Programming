@@ -15,7 +15,7 @@ case class Point(xCord: Int, yCord: Int){
     length
   }
 
-  def invert(): Point = Point(-this.xCord, -this.yCord)
+  def invert(): Point = Point(this.yCord, this.xCord)
 
   override def toString: String = "(" + this.xCord + ", " + this.yCord + ")";
 }
